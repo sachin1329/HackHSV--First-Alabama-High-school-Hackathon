@@ -1,0 +1,12 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<div id = "load">adsfsd</div>
+<script>
+$.ajax({
+    url: 'http://www.hackhsv.com',
+    type: 'GET',
+    success: function(res) {
+        var loadIt = $(res.responseText).find('#team').html();
+        $('#load').html(loadIt);
+    }
+});
+</script>
